@@ -637,11 +637,14 @@ a {
   margin-bottom: var(--spacing-lg);
 }
 
+
+
 .contact-subtitle {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: var(--color-primary);
-  margin-top: var(--spacing-sm);
+  margin-top: -50px; /* SUBE EL SUBTÍTULO */
 }
+
 
 .contact-content {
   display: grid;

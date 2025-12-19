@@ -1024,8 +1024,6 @@ a {
 
 /* ========================= AJUSTE LOGO SCROLLED ========================= */
 .navbar.scrolled .logo-icon {
-  height: 150px; /* más grande que antes */
-  top: -35px; /* lo baja un poquito para que quede centrado */
   left: 2px;
   opacity: 1;
   transition: all 0.4s ease;
@@ -1066,5 +1064,80 @@ a {
   .logo-full,
   .logo-icon {
     height: 50px;
+  }
+}
+
+
+/* ========================= FIX REAL SERVICIOS MOBILE ========================= */
+@media (max-width: 768px) {
+  .servicios {
+    display: block; /* rompe el flex centrado */
+    padding-top: 100px; /* debajo del navbar */
+    padding-bottom: 60px;
+  }
+
+  .servicios .container {
+    padding-top: 0;
+  }
+
+  .servicios .section-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+  }
+}
+
+
+
+
+
+
+/* ========================= FIX DEFINITIVO LOGO NAV MOBILE ========================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0.8rem 0;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    height: 66px;      /* MÁS GRANDE */
+    width: 180px;      /* evita recortes */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo-full,
+  .logo-icon {
+    height: 66px;      /* tamaño real del logo */
+    width: auto;
+  }
+}
+
+
+
+
+
+
+/* ========================= WHATSAPP FLOAT MOBILE PRO ========================= */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 78px;
+    height: 78px;
+    bottom: 22px;
+    right: 22px;
+  }
+
+  .whatsapp-float img {
+    width: 64px;
+    height: 64px;
   }
 }
